@@ -13,8 +13,8 @@ class update {
     ensure => "installed",
     require => Exec['apt-get update'],
   }
-}
 
+}
 
 class { 'jdk_oracle': 
     ensure => "installed",
