@@ -35,10 +35,16 @@ fi
 
 if [ ! -d $module_path_on_guest/java ]
 then
-  echo "puppet module install tylerwalts-jdk_oracle is not installed, installing..."
-  #puppet module install puppetlabs-java --environment=$puppet_environment
+  echo "puppet module tylerwalts-jdk_oracle is not installed, installing..."
   puppet module install tylerwalts-jdk_oracle --environment=$puppet_environment
-  echo "puppet module install tylerwalts-jdk_oracle already installed"
+  echo "puppet module tylerwalts-jdk_oracle already installed"
+fi
+
+if [ ! -d $module_path_on_guest/tomcat ]
+then
+  echo "puppet module aco-tomcat is not installed, installing..."
+  puppet module install aco-tomcat --environment=$puppet_environment
+  echo "puppet module aco-tomcat already installed"
 fi
 
 

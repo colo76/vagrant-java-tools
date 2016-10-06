@@ -15,6 +15,14 @@ class update {
   }
 }
 
+
 class { 'jdk_oracle': 
     ensure => "installed",
 }
+
+class { 'tomcat':
+  install_from => 'archive',
+  version      => '8.0.15',
+}
+
+
