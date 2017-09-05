@@ -6,6 +6,8 @@ I set bash provisioning(tools/create_puppet_modules_guest.sh) to configure and i
 
 I set puppet provisioning(/puppet/manifests/sample.pp) to install Oracle JDK 8 and Tomcat.
 
+To install and run:
+
 ```{r, engine='bash', code_block_name} ...
 git clone https://github.com/colo76/vagrant-java-tools.git
 cd vagrant-java-tools
