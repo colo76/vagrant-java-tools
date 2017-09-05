@@ -1,4 +1,4 @@
-# Java Tools Environment with Vagrant + Puppet + Bash Provisioning
+### Java Tools Environment with Vagrant + Puppet + Bash Provisioning
 
 This is a quite simple example to show how to create a virtual java environment with Vagrant, Puppet and Bash provisioning.
 
